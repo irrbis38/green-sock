@@ -1,0 +1,31 @@
+body {
+  background-color: #ccc;
+}
+
+.wrapper {
+  max-width: 800px;
+  min-height: 500px;
+  margin: 0 auto;
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #999;
+}
+
+.img__item {
+  width: 200px;
+}
+
+.img-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(11, 133, 11);
+}
