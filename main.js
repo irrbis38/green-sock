@@ -1,13 +1,13 @@
 window.addEventListener("DOMContentLoaded", () => {
-  // startTween();
   startTimeline();
 });
 
 function startTimeline() {
-  const tl = gsap.timeline();
+  const tl = gsap.timeline({ paused: true });
   const duration = 1;
-  tl.to("#tools", duration, { y: -100, ease: Elastic.easeInOut });
-  tl.to("#power", duration, { y: -100 });
+  const delay = 0.2;
+  tl.to("#tools", duration, { y: -100, ease: Elastic.easeInOut }, delay);
+  tl.to("#power", duration, { y: -100, ease: Elastic.easeInOut }, delay);
 
   const startBtn = document.getElementById("start");
   const pauseBtn = document.getElementById("pause");
